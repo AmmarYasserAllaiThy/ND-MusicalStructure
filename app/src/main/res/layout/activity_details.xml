@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/Logo"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_music" />
+
+        <TextView
+            style="@style/DetailsKeyTV"
+            android:text="@string/song_name" />
+
+        <TextView
+            android:id="@+id/song_name_tv"
+            style="@style/DetailsValueTV" />
+
+        <TextView
+            style="@style/DetailsKeyTV"
+            android:text="@string/artist_name" />
+
+        <TextView
+            android:id="@+id/artist_name_tv"
+            style="@style/DetailsValueTV" />
+
+        <TextView
+            style="@style/DetailsKeyTV"
+            android:text="@string/album_name" />
+
+        <TextView
+            android:id="@+id/album_name_tv"
+            style="@style/DetailsValueTV" />
+
+        <TextView
+            style="@style/DetailsKeyTV"
+            android:text="@string/release_date" />
+
+        <TextView
+            android:id="@+id/release_date_tv"
+            style="@style/DetailsValueTV" />
+
+    </LinearLayout>
+
+</ScrollView>

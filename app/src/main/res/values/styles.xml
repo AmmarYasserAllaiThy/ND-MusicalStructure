@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorWindow</item>
+    </style>
+
+    <style name="FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/colorWindow</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="Logo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:contentDescription">@string/image</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">32dp</item>
+        <item name="android:src">@drawable/ic_headphones</item>
+    </style>
+
+    <style name="AppName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="DescTV" parent="AppName">
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:text">@string/welcome_text</item>
+    </style>
+
+    <style name="Logo.Song" parent="Logo">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:src">@drawable/ic_music</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="SongNameTV" parent="AppName">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:text">@string/song_name</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AlbumNameTV" parent="SongNameTV">
+        <item name="android:text">@string/album_name</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PlayerIB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:contentDescription">@string/image</item>
+    </style>
+
+    <style name="DetailsKeyTV" parent="SongNameTV">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="DetailsValueTV" parent="AlbumNameTV">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+</resources>

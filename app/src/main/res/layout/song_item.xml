@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView style="@style/Logo.Song" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/song_name_tv"
+            style="@style/SongNameTV"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/album_name_tv"
+            style="@style/AlbumNameTV"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/details_ib"
+        style="@style/PlayerIB"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_more_48dp"
+        android:tint="@color/colorPrimary" />
+
+</LinearLayout>

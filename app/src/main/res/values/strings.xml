@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="welcome_text">An Android Nano Degree Program\'s (ANDP) practical project on Udacity.</string>
+    <string name="song_name">Song name</string>
+    <string name="album_name">Album name</string>
+    <string name="image">Image</string>
+    <string name="artist_name">Artist name</string>
+    <string name="release_date">Release date</string>
+</resources>
